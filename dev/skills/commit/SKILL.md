@@ -17,7 +17,7 @@ Input: $ARGUMENTS
 3. Propose:
    - Files to include (only the task's files; never `git add -A` blindly).
    - A commit message of about 10 words, imperative, with the ticket id if known
-     (e.g. `GOR-355 show whole numbers on widgets, 2dp in grid`). Follow the repo's existing
+     (e.g. `ABC-123 fix date format on the invoices page`). Follow the repo's existing
      message style from `git log --oneline -10`.
 4. If the user said "msg only", stop here.
 5. Otherwise ask for confirmation. On yes, commit only those files with

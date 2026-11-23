@@ -1,6 +1,6 @@
 ---
 name: verify-fix
-description: Prove a fix works by reproducing the bug without the fix and showing it gone with the fix (before/after), then checking nearby behaviour. Use when the user runs /qa:verify-fix or asks "is it really fixed", "stash and test again", "are you sure", or "test GOR-xxx again".
+description: Prove a fix works by reproducing the bug without the fix and showing it gone with the fix (before/after), then checking nearby behaviour. Use when the user runs /qa:verify-fix or asks "is it really fixed", "stash and test again", "are you sure", or "test ABC-123 again".
 argument-hint: "<bug or ticket id; optional: environment, inputs>"
 ---
 

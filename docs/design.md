@@ -14,7 +14,7 @@ Built from an analysis of ~1,300 of my prompts (Jul to Nov 2026): roughly 40% de
 
 ## Goals
 
-- Named commands per area: `/dev:implement <context>`, `/qa:regression`, `/pm:jira-comment GOR-351`.
+- Named commands per area: `/dev:implement <context>`, `/qa:regression`, `/pm:jira-comment ABC-123`.
 - An auto-pick command per area (`/dev:dev <what I want>`) that chooses the right command.
 - My guardrails applied every time without retyping them.
 - Hard blocks for the few actions that must never happen silently.

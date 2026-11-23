@@ -17,7 +17,7 @@ Input: $ARGUMENTS
 3. Draft the comment:
    - First line: the point (done / question / why it happens / out of scope).
    - Then 2-5 short bullets with plain-language detail and real examples
-     (e.g. "£1,747,936.45 now shows as £1,747,937").
+     (e.g. "£1,234.56 now shows as £1,235").
    - Questions numbered, so the reader can answer by number.
    - Mentions (@name) only for people the user names.
    - Professional and concise; British English; no em-dashes; no timeline or scope promises.
