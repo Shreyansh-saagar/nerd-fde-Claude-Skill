@@ -28,3 +28,8 @@ Scope: $ARGUMENTS (default: all suites, report only)
 - Run the new tests and show them passing; report the coverage change before/after.
 
 Never edit production code to make a test pass without saying so and asking.
+
+## Clean up
+Delete coverage output you generated (e.g. `coverage/`, `htmlcov/`, `.coverage`, test-results)
+unless the user asked to keep it or it existed before the run. Confirm `git status` matches
+what it was before you started.
