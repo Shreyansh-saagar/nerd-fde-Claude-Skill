@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.svg" alt="nerd-fde mascot: a nerdy Forward Deployed Engineer robot with glasses, laptop, and deployment backpack" width="260" />
+  <img src="assets/logo.png" alt="nerd-fde mascot: a nerdy Forward Deployed Engineer robot with glasses, laptop, and deployment backpack" width="260" />
 
   # nerd-fde
 
@@ -42,6 +42,58 @@ Instead of repeating:
 - **Repository-aware rules** via each project's `CLAUDE.md`.
 - **A lightweight Python `PreToolUse` hook** that asks before commits/pushes and blocks selected high-risk actions.
 - **No toolkit-owned MCP server, backend, account, or subscription.** Claude Code itself and optional integrations have their own requirements/costs.
+
+## Visual overview
+
+### Prompt distribution that inspired nerd-fde
+
+```mermaid
+pie showData
+    title Prompt distribution behind nerd-fde
+    "Development" : 40
+    "QA" : 30
+    "Project management" : 15
+    "General / learning" : 15
+```
+
+### How nerd-fde works
+
+```mermaid
+flowchart LR
+    A[User request] --> B{Specific command or auto-pick router?}
+    B -->|Specific command| C[Chosen skill]
+    B -->|Router| D[Best-fit skill selected]
+    C --> E[Load core principles]
+    D --> E
+    E --> F[Read project CLAUDE.md]
+    F --> G[Understand the codebase and constraints]
+    G --> H[Plan the smallest safe change]
+    H --> I{Needs approval?}
+    I -->|Yes| J[Wait for user approval]
+    I -->|No| K[Proceed]
+    J --> K[Implement narrowly]
+    K --> L[Verify with tests or evidence]
+    L --> M[Report what changed and what was tested]
+```
+
+### Toolkit structure at a glance
+
+```mermaid
+flowchart TB
+    subgraph Marketplace[nerd-fde marketplace]
+        Core[core - principles and setup]
+        Dev[dev - implementation]
+        QA[qa - verification]
+        PM[pm - planning]
+        General[general - learning]
+    end
+
+    User[Claude Code user] --> Marketplace
+    Core --> Dev
+    Core --> QA
+    Core --> PM
+    Core --> General
+```
 
 ## Installation
 
