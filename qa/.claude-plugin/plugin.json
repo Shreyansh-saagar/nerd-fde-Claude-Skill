@@ -1,0 +1,8 @@
+{
+  "name": "qa",
+  "version": "0.1.0",
+  "description": "QA commands: manual test steps, regression, browser tests, coverage, fix verification, security check, reports",
+  "author": {
+    "name": "Shreyansh Saagar"
+  }
+}

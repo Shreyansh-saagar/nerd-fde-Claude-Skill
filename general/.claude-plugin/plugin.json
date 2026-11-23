@@ -1,0 +1,8 @@
+{
+  "name": "general",
+  "version": "0.1.0",
+  "description": "General commands: explain in simple words, recaps, guided learning",
+  "author": {
+    "name": "Shreyansh Saagar"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "dev",
+  "version": "0.1.0",
+  "description": "Developer commands: implement, debug, plan a ticket, design, refactor, review, commit",
+  "author": {
+    "name": "Shreyansh Saagar"
+  }
+}

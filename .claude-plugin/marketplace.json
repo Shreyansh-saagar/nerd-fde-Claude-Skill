@@ -1,0 +1,40 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-toolkit",
+  "description": "Personal Claude Code toolkit: dev, qa, pm and general commands with shared guardrails",
+  "owner": {
+    "name": "Shreyansh Saagar"
+  },
+  "plugins": [
+    {
+      "name": "core",
+      "description": "Shared rules and safety hooks used by every toolkit command",
+      "source": "./core",
+      "category": "productivity"
+    },
+    {
+      "name": "dev",
+      "description": "Developer commands: implement, debug, plan a ticket, design, refactor, review, commit",
+      "source": "./dev",
+      "category": "productivity"
+    },
+    {
+      "name": "qa",
+      "description": "QA commands: manual test steps, regression, browser tests, coverage, fix verification, security check, reports",
+      "source": "./qa",
+      "category": "productivity"
+    },
+    {
+      "name": "pm",
+      "description": "PM commands: ticket triage, feature planning, estimates, Jira comments, stakeholder notes, build log",
+      "source": "./pm",
+      "category": "productivity"
+    },
+    {
+      "name": "general",
+      "description": "General commands: explain in simple words, recaps, guided learning",
+      "source": "./general",
+      "category": "productivity"
+    }
+  ]
+}
