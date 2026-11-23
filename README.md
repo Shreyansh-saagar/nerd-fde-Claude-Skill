@@ -48,6 +48,7 @@ Instead of repeating:
 ### Prompt distribution that inspired nerd-fde
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#22D3EE', 'primaryTextColor':'#0F172A', 'primaryBorderColor':'#0891B2', 'secondaryColor':'#FDE047', 'secondaryTextColor':'#111827', 'secondaryBorderColor':'#F59E0B', 'tertiaryColor':'#F9A8D4', 'tertiaryTextColor':'#111827', 'tertiaryBorderColor':'#DB2777', 'lineColor':'#8B5CF6', 'clusterBkg':'#DCFCE7', 'clusterBorder':'#22C55E', 'defaultLinkColor':'#8B5CF6', 'edgeLabelBackground':'#FFFFFF', 'pie1':'#06B6D4', 'pie2':'#8B5CF6', 'pie3':'#F59E0B', 'pie4':'#22C55E', 'pie5':'#FB7185', 'pieOuterStrokeColor':'#FFFFFF', 'pieSectionTextColor':'#111827', 'pieTitleTextColor':'#111827' }}}%%
 pie showData
     title Prompt distribution behind nerd-fde
     "Development" : 40
@@ -59,6 +60,7 @@ pie showData
 ### How nerd-fde works
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#22D3EE', 'primaryTextColor':'#0F172A', 'primaryBorderColor':'#0891B2', 'secondaryColor':'#FDE047', 'secondaryTextColor':'#111827', 'secondaryBorderColor':'#F59E0B', 'tertiaryColor':'#F9A8D4', 'tertiaryTextColor':'#111827', 'tertiaryBorderColor':'#DB2777', 'lineColor':'#8B5CF6', 'clusterBkg':'#DCFCE7', 'clusterBorder':'#22C55E', 'defaultLinkColor':'#8B5CF6', 'edgeLabelBackground':'#FFFFFF', 'pie1':'#06B6D4', 'pie2':'#8B5CF6', 'pie3':'#F59E0B', 'pie4':'#22C55E', 'pie5':'#FB7185', 'pieOuterStrokeColor':'#FFFFFF', 'pieSectionTextColor':'#111827', 'pieTitleTextColor':'#111827' }}}%%
 flowchart LR
     A[User request] --> B{Specific command or auto-pick router?}
     B -->|Specific command| C[Chosen skill]
@@ -79,6 +81,7 @@ flowchart LR
 ### Toolkit structure at a glance
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#22D3EE', 'primaryTextColor':'#0F172A', 'primaryBorderColor':'#0891B2', 'secondaryColor':'#FDE047', 'secondaryTextColor':'#111827', 'secondaryBorderColor':'#F59E0B', 'tertiaryColor':'#F9A8D4', 'tertiaryTextColor':'#111827', 'tertiaryBorderColor':'#DB2777', 'lineColor':'#8B5CF6', 'clusterBkg':'#DCFCE7', 'clusterBorder':'#22C55E', 'defaultLinkColor':'#8B5CF6', 'edgeLabelBackground':'#FFFFFF', 'pie1':'#06B6D4', 'pie2':'#8B5CF6', 'pie3':'#F59E0B', 'pie4':'#22C55E', 'pie5':'#FB7185', 'pieOuterStrokeColor':'#FFFFFF', 'pieSectionTextColor':'#111827', 'pieTitleTextColor':'#111827' }}}%%
 flowchart TB
     subgraph Marketplace[nerd-fde marketplace]
         Core[core - principles and setup]
@@ -206,6 +209,7 @@ The commit workflow proposes files and a commit message and asks before committi
 ## How it works
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#22D3EE', 'primaryTextColor':'#0F172A', 'primaryBorderColor':'#0891B2', 'secondaryColor':'#FDE047', 'secondaryTextColor':'#111827', 'secondaryBorderColor':'#F59E0B', 'tertiaryColor':'#F9A8D4', 'tertiaryTextColor':'#111827', 'tertiaryBorderColor':'#DB2777', 'lineColor':'#8B5CF6', 'clusterBkg':'#DCFCE7', 'clusterBorder':'#22C55E', 'defaultLinkColor':'#8B5CF6', 'edgeLabelBackground':'#FFFFFF', 'pie1':'#06B6D4', 'pie2':'#8B5CF6', 'pie3':'#F59E0B', 'pie4':'#22C55E', 'pie5':'#FB7185', 'pieOuterStrokeColor':'#FFFFFF', 'pieSectionTextColor':'#111827', 'pieTitleTextColor':'#111827' }}}%%
 flowchart TD
     A[Your request in Claude Code] --> B{Explicit command or auto-pick router?}
     B --> C[Dev / QA / PM / General skill]
