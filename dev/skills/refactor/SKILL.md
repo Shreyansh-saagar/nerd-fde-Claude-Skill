@@ -17,7 +17,8 @@ Request: $ARGUMENTS
   out of a controller). No new interfaces with one implementation.
 
 ## Steps
-1. Read the target code and every caller. Note existing tests covering it.
+1. Read the target code and every caller. Note existing tests covering it. Check the existing
+   design (layers, module boundaries, design docs) so the new structure fits the HLD.
 2. Plan: what moves where, new file/function names, callers updated. Wait for approval.
 3. If there is no test covering the behaviour, propose a small characterisation test first.
 4. Refactor in small steps. Keep imports and public names stable unless approved.

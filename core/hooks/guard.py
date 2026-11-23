@@ -1,4 +1,4 @@
-"""claude-toolkit PreToolUse guard.
+"""nerd-fde PreToolUse guard.
 
 Reads the hook JSON on stdin and prints a permission decision:
   ask  -> git commit, git push
@@ -61,10 +61,10 @@ def check_git(seg):
     sub, rest = args[0], args[1:]
     if sub == "push":
         if any(a in {"-f", "--force"} or a.startswith("--force") or a.startswith("+") for a in rest):
-            return ("deny", "Force push is blocked by claude-toolkit. Push normally, or run it yourself.")
-        return ("ask", "claude-toolkit: confirm this git push.")
+            return ("deny", "Force push is blocked by nerd-fde. Push normally, or run it yourself.")
+        return ("ask", "nerd-fde: confirm this git push.")
     if sub == "commit":
-        return ("ask", "claude-toolkit: confirm this git commit.")
+        return ("ask", "nerd-fde: confirm this git commit.")
     return None
 
 
@@ -77,7 +77,7 @@ def check_rm(seg):
     force = "f" in flags or "--force" in long_flags
     targets = [a for a in seg[1:] if not a.startswith("-")]
     if recursive and force and any(t in BROAD_RM for t in targets):
-        return ("deny", "rm -rf on a broad path (/, ~, *, .) is blocked by claude-toolkit.")
+        return ("deny", "rm -rf on a broad path (/, ~, *, .) is blocked by nerd-fde.")
     return None
 
 
@@ -85,7 +85,7 @@ def check_secret_read(seg):
     if not seg or os.path.basename(seg[0]) not in READ_CMDS:
         return None
     if any(is_secret(a) for a in seg[1:] if not a.startswith("-")):
-        return ("deny", "Reading secret files (.env, keys) is blocked by claude-toolkit. "
+        return ("deny", "Reading secret files (.env, keys) is blocked by nerd-fde. "
                         "Use .env.example or ask the user for the non-secret values you need.")
     return None
 
@@ -96,7 +96,7 @@ def decide(data):
     if tool == "Read":
         path = inp.get("file_path") or ""
         if is_secret(path):
-            return ("deny", "Reading secret files (.env, keys) is blocked by claude-toolkit. "
+            return ("deny", "Reading secret files (.env, keys) is blocked by nerd-fde. "
                             "Use .env.example or ask the user for the non-secret values you need.")
         return None
     if tool == "Bash":

@@ -1,4 +1,4 @@
-# Claude Toolkit: design
+# nerd-fde: design
 
 Date: 2026-11-23
 Owner: Shreyansh Saagar
@@ -43,7 +43,7 @@ Built from an analysis of ~1,300 of my prompts (Jul to Nov 2026): roughly 40% de
 ## Layout
 
 ```
-~/claude-toolkit/
+~/nerd-fde/
   .claude-plugin/marketplace.json
   docs/design.md
   README.md

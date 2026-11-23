@@ -1,5 +1,5 @@
 {
-  "description": "claude-toolkit safety guard: ask before commit/push, block force-push, broad rm -rf and secret file reads",
+  "description": "nerd-fde safety guard: ask before commit/push, block force-push, broad rm -rf and secret file reads",
   "hooks": {
     "PreToolUse": [
       {

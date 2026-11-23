@@ -1,6 +1,6 @@
 ---
 name: dev
-description: Auto-pick router for claude-toolkit Developer commands. Use only when the user runs /dev:dev with a request; it chooses and runs the matching /dev:* command.
+description: Auto-pick router for nerd-fde Developer commands. Use only when the user runs /dev:dev with a request; it chooses and runs the matching /dev:* command.
 argument-hint: "<what you want done>"
 disable-model-invocation: true
 ---
@@ -24,7 +24,7 @@ Request: $ARGUMENTS
 | `dev:implement` | build a feature or apply an approved fix |
 | `dev:debug` | error, traceback, failing test or 'why is X happening' |
 | `dev:plan-ticket` | 'go through ticket X', which files change, impact, no code yet |
-| `dev:design` | database/API/architecture design for something new |
+| `dev:design` | database/API/architecture, HLD or LLD design for something new |
 | `dev:refactor` | move, split or merge code without changing behaviour |
 | `dev:review` | check quality of current changes before commit |
 | `dev:commit` | commit message or committing current changes |

@@ -21,6 +21,8 @@ Ticket: $ARGUMENTS
 ## Reply
 - **What it asks** (plain words).
 - **Current state**: done / partial / not started, with evidence.
+- **Design impact**: HLD (which modules/layers are involved; any architecture change) and
+  LLD (main functions/components/types to add or change), sized to the ticket.
 - **Changes**: table of file | what changes | why.
 - **Size**: small / medium / large, and number of files.
 - **Risks and edge cases**, including old saved data and other callers.

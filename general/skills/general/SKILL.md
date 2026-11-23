@@ -1,6 +1,6 @@
 ---
 name: general
-description: Auto-pick router for claude-toolkit General commands. Use only when the user runs /general:general with a request; it chooses and runs the matching /general:* command.
+description: Auto-pick router for nerd-fde General commands. Use only when the user runs /general:general with a request; it chooses and runs the matching /general:* command.
 argument-hint: "<what you want done>"
 disable-model-invocation: true
 ---

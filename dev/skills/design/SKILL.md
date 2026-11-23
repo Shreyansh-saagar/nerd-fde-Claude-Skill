@@ -19,6 +19,13 @@ Feature: $ARGUMENTS
 ## Design contents (skip what does not apply)
 - **Goal** and non-goals, 2-4 lines.
 - **Approaches**: 2-3 options, trade-offs, your pick and why.
+- **HLD (high-level design)**: components/modules involved, their responsibilities, how they
+  talk (API, events, DB), where the feature sits in the existing architecture. A simple text
+  diagram if it helps.
+- **LLD (low-level design)**: per component, the classes/functions/components, their inputs,
+  outputs and types, key algorithms, error handling, and which file each lives in.
+- **Principles**: which SOLID principles and patterns shape the design and why; what was kept
+  simple on purpose.
 - **Data model**: tables/columns, one line per column on its purpose; indexes; migration and
   rollback; what happens to existing rows.
 - **API**: endpoints, request/response shape, auth and permission checks.

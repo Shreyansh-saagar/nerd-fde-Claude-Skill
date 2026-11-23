@@ -1,6 +1,6 @@
 ---
 name: principles
-description: Shared guardrails for claude-toolkit commands (dev, qa, pm, general). Every toolkit skill loads this first. Use directly only when the user asks to see or apply "toolkit principles" or "toolkit rules".
+description: Shared guardrails for nerd-fde commands (dev, qa, pm, general). Every toolkit skill loads this first. Use directly only when the user asks to see or apply "toolkit principles" or "toolkit rules".
 ---
 
 # Toolkit principles
@@ -28,6 +28,10 @@ section, read it now; it overrides anything below where they conflict.
   - L: subtypes and implementations must honour the contract callers rely on.
   - I: small, focused interfaces; no "god" props or params objects.
   - D: depend on abstractions at real boundaries (I/O, network, DB), not everywhere.
+- Design: respect the existing HLD (layers, module boundaries) and agree the LLD (functions,
+  types, file placement) in the plan before building.
+- Best practices: intention-revealing names, small functions, early returns, strong typing,
+  no magic numbers or strings, no duplication, no leftover debug or commented-out code.
 - Production code: validate inputs at trust boundaries, handle errors explicitly, never swallow
   exceptions silently. Demo shortcuts are labelled as such.
 - Match the repo's existing style, naming and patterns.

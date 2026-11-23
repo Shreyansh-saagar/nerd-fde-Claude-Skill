@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "claude-toolkit",
+  "name": "nerd-fde",
   "description": "Personal Claude Code toolkit: dev, qa, pm and general commands with shared guardrails",
   "owner": {
     "name": "Shreyansh Saagar"

@@ -1,6 +1,6 @@
 ---
 name: setup-project
-description: Draft a "Project rules" section in the current repo's CLAUDE.md so claude-toolkit commands know this project's conventions. Use when the user runs /core:setup-project or asks to "set up project rules" for the toolkit.
+description: Draft a "Project rules" section in the current repo's CLAUDE.md so nerd-fde commands know this project's conventions. Use when the user runs /core:setup-project or asks to "set up project rules" for the toolkit.
 argument-hint: "[extra notes about this project]"
 ---
 

@@ -18,9 +18,13 @@ Target: $ARGUMENTS (empty means uncommitted changes: `git diff` + `git diff --st
    injection, unsafe logging of user data.
 4. **Quality**: duplication of existing helpers, wrong file placement, dead code, debug leftovers,
    swallowed errors, project conventions (markers, naming).
-5. **SOLID**: only flag violations that cause real harm (mixed concerns, leaky contracts,
-   god objects); not theoretical ones.
-6. **Tests**: is the changed logic covered; do existing tests still make sense.
+5. **Design fit (HLD/LLD)**: does the change respect the existing layers and module
+   boundaries (e.g. business logic in services, not controllers or UI)? Does it match the
+   agreed design or design docs, if any?
+6. **SOLID and best practices**: flag violations that cause real harm (mixed concerns, leaky
+   contracts, god objects, duplication, magic values, weak typing, deep nesting); not
+   theoretical ones.
+7. **Tests**: is the changed logic covered; do existing tests still make sense.
 
 ## Report
 - Verdict: ready / needs changes.

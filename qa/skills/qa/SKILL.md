@@ -1,6 +1,6 @@
 ---
 name: qa
-description: Auto-pick router for claude-toolkit QA commands. Use only when the user runs /qa:qa with a request; it chooses and runs the matching /qa:* command.
+description: Auto-pick router for nerd-fde QA commands. Use only when the user runs /qa:qa with a request; it chooses and runs the matching /qa:* command.
 argument-hint: "<what you want done>"
 disable-model-invocation: true
 ---

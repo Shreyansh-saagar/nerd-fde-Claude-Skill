@@ -1,6 +1,6 @@
 ---
 name: pm
-description: Auto-pick router for claude-toolkit PM commands. Use only when the user runs /pm:pm with a request; it chooses and runs the matching /pm:* command.
+description: Auto-pick router for nerd-fde PM commands. Use only when the user runs /pm:pm with a request; it chooses and runs the matching /pm:* command.
 argument-hint: "<what you want done>"
 disable-model-invocation: true
 ---
