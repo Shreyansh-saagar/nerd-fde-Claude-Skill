@@ -1,0 +1,17 @@
+{
+  "description": "claude-toolkit safety guard: ask before commit/push, block force-push, broad rm -rf and secret file reads",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I \"${CLAUDE_PLUGIN_ROOT}/hooks/guard.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
